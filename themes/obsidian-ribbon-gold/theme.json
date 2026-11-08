@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "obsidian-ribbon-gold",
+  "name": "Obsidian Ribbon Gold (Estilo Ribbon)",
+  "version": "1.0.0",
+  "author": "Personal OLED Pack",
+  "license": "MIT",
+  "description": "Diseño en cinta horizontal panorámica con tonos negro OLED puro, curvas obsidiana y acentos en dorado y azul zafiro.",
+  "engine": {
+    "home": ">=1.6.0",
+    "editions": [
+      "no-root",
+      "root"
+    ]
+  },
+  "layout": {
+    "type": "ribbon",
+    "columns": 5,
+    "fixedColumns": true,
+    "inputPlacement": "header"
+  },
+  "capabilities": [
+    "ribbon-layout-v1"
+  ],
+  "assets": {
+    "stylesheet": "./theme.css",
+    "wallpaper": "./wallpaper.jpg",
+    "preview": "./preview.png"
+  },
+  "ribbon": {
+    "cardWidth": 220,
+    "cardHeight": 130,
+    "spacing": 22,
+    "skew": -6,
+    "focusLift": 18,
+    "showCaptions": true,
+    "showClock": true,
+    "showDate": true,
+    "bottomLeftShortcuts": true
+  }
+}

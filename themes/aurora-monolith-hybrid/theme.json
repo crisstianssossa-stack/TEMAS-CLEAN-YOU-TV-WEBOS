@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "aurora-monolith-hybrid",
+  "name": "Aurora Monolith Hybrid (Diseño Nuevo Híbrido)",
+  "version": "1.0.0",
+  "author": "Personal OLED Pack",
+  "license": "MIT",
+  "description": "Diseño nuevo exclusivo que fusiona la cinta horizontal flotante (sin inclinación) con tarjetas de cristal esmeralda/violeta y accesos rápidos inferiores.",
+  "engine": {
+    "home": ">=1.6.0",
+    "editions": [
+      "no-root",
+      "root"
+    ]
+  },
+  "layout": {
+    "type": "ribbon",
+    "columns": 5,
+    "fixedColumns": true,
+    "inputPlacement": "header"
+  },
+  "capabilities": [
+    "ribbon-layout-v1"
+  ],
+  "assets": {
+    "stylesheet": "./theme.css",
+    "wallpaper": "./wallpaper.jpg",
+    "preview": "./preview.png"
+  },
+  "ribbon": {
+    "cardWidth": 236,
+    "cardHeight": 136,
+    "spacing": 26,
+    "skew": 0,
+    "focusLift": 22,
+    "showCaptions": true,
+    "showClock": true,
+    "showDate": true,
+    "bottomLeftShortcuts": true
+  }
+}

@@ -1,0 +1,54 @@
+/* Tema: Obsidian Ribbon Gold - Estilo Ribbon (2B) + OLED Minimalista (3A) */
+:root {
+  --cytv-bg-color: #000000;
+  --cytv-surface-color: rgba(10, 12, 18, 0.78);
+  --cytv-surface-focus: rgba(20, 24, 36, 0.92);
+  --cytv-accent-color: #d4af37;
+  --cytv-accent-glow: rgba(37, 99, 235, 0.55);
+  --cytv-text-primary: #f8fafc;
+  --cytv-text-secondary: #94a3b8;
+  --cytv-card-radius: 16px;
+  --cytv-ribbon-skew: -6deg;
+  --cytv-ribbon-lift: -18px;
+}
+
+body, .home-screen {
+  background-color: #000000;
+  background-image: url('./wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--cytv-text-primary);
+}
+
+.ribbon-container {
+  padding-bottom: 48px;
+}
+
+.app-tile, .ribbon-card {
+  background: var(--cytv-surface-color);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--cytv-card-radius);
+  transform: skewX(var(--cytv-ribbon-skew));
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.app-tile:focus, .app-tile.focused, .ribbon-card.focused {
+  background: var(--cytv-surface-focus);
+  border: 2px solid var(--cytv-accent-color);
+  transform: skewX(var(--cytv-ribbon-skew)) translateY(var(--cytv-ribbon-lift)) scale(1.06);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.85), 0 0 22px var(--cytv-accent-glow);
+}
+
+.clock-widget {
+  color: #ffffff;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.9);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+}
+
+.bottom-left-shortcuts .shortcut-pill {
+  background: rgba(8, 10, 15, 0.82);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: #e2e8f0;
+  border-radius: 999px;
+}

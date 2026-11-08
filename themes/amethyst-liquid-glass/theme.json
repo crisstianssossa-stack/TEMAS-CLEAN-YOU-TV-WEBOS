@@ -1,1 +1,30 @@
-
+{
+  "schemaVersion": 1,
+  "id": "amethyst-liquid-glass",
+  "name": "Amethyst Liquid Glass (Estilo Liquid Glass)",
+  "version": "1.0.0",
+  "author": "Personal OLED Pack",
+  "license": "MIT",
+  "description": "Diseño tipo cristal líquido ahumado con dock inferior translúcido, fila de entradas HDMI y destellos amatista e índigo sobre negro OLED.",
+  "engine": {
+    "home": ">=1.6.0",
+    "editions": [
+      "no-root",
+      "root"
+    ]
+  },
+  "layout": {
+    "type": "dock-grid",
+    "columns": 5,
+    "fixedColumns": false,
+    "inputPlacement": "shelf"
+  },
+  "capabilities": [
+    "input-shelf-v1"
+  ],
+  "assets": {
+    "stylesheet": "./theme.css",
+    "wallpaper": "./wallpaper.jpg",
+    "preview": "./preview.png"
+  }
+}

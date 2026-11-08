@@ -1,0 +1,48 @@
+/* Tema: Aurora Monolith Hybrid - Diseño Nuevo Híbrido (Ribbon Flotante + Liquid Glass OLED) */
+:root {
+  --cytv-bg-color: #000000;
+  --cytv-surface-color: rgba(8, 14, 16, 0.68);
+  --cytv-surface-focus: rgba(14, 26, 29, 0.88);
+  --cytv-accent-color: #10b981;
+  --cytv-accent-violet: #8b5cf6;
+  --cytv-text-primary: #ecfdf5;
+  --cytv-text-secondary: #a7f3d0;
+  --cytv-card-radius: 24px;
+  --cytv-ribbon-lift: -22px;
+}
+
+body, .home-screen {
+  background-color: #000000;
+  background-image: url('./wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--cytv-text-primary);
+}
+
+.app-tile, .ribbon-card {
+  background: var(--cytv-surface-color);
+  border: 1px solid rgba(139, 92, 246, 0.22);
+  border-radius: var(--cytv-card-radius);
+  transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.app-tile:focus, .app-tile.focused, .ribbon-card.focused {
+  background: var(--cytv-surface-focus);
+  border: 2px solid var(--cytv-accent-color);
+  transform: translateY(var(--cytv-ribbon-lift)) scale(1.08);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.92), 0 0 26px rgba(16, 185, 129, 0.45), 0 0 12px rgba(139, 92, 246, 0.35);
+}
+
+.clock-widget {
+  color: #ffffff;
+  font-weight: 200;
+  letter-spacing: 0.06em;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.95);
+}
+
+.bottom-left-shortcuts .shortcut-pill {
+  background: rgba(10, 16, 22, 0.78);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #d1fae5;
+  border-radius: 999px;
+}

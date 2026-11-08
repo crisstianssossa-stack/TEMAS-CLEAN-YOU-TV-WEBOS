@@ -1,0 +1,45 @@
+/* Tema: Nocturnal Horizon Classic - Estilo Classic (2C) + OLED Minimalista (3A) */
+:root {
+  --cytv-bg-color: #000000;
+  --cytv-tile-surface: rgba(12, 14, 18, 0.82);
+  --cytv-tile-focus: rgba(24, 28, 36, 0.95);
+  --cytv-accent-color: #f59e0b;
+  --cytv-accent-secondary: #06b6d4;
+  --cytv-text-primary: #f8fafc;
+  --cytv-text-secondary: #cbd5e1;
+  --cytv-columns: 5;
+  --cytv-card-radius: 18px;
+}
+
+body, .home-screen {
+  background-color: #000000;
+  background-image: url('./wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--cytv-text-primary);
+}
+
+.app-grid {
+  gap: 24px;
+}
+
+.app-tile {
+  background: var(--cytv-tile-surface);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: var(--cytv-card-radius);
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.app-tile:focus, .app-tile.focused {
+  background: var(--cytv-tile-focus);
+  border: 2px solid var(--cytv-accent-color);
+  transform: scale(1.06);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.88), 0 0 20px rgba(245, 158, 11, 0.42);
+}
+
+.top-bar .control-pill {
+  background: rgba(15, 18, 24, 0.85);
+  border: 1px solid rgba(6, 182, 212, 0.32);
+  color: #f1f5f9;
+  border-radius: 999px;
+}

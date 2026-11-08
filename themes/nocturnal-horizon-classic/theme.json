@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "nocturnal-horizon-classic",
+  "name": "Nocturnal Horizon Classic (Estilo Classic)",
+  "version": "1.0.0",
+  "author": "Personal OLED Pack",
+  "license": "MIT",
+  "description": "Cuadrícula clásica de 5 columnas ultra limpia con horizonte nocturno en carbón mate, brillo ámbar dorado y cian suave.",
+  "engine": {
+    "home": ">=1.6.0",
+    "editions": [
+      "no-root",
+      "root"
+    ]
+  },
+  "layout": {
+    "type": "classic-grid",
+    "columns": 5,
+    "fixedColumns": false,
+    "inputPlacement": "header"
+  },
+  "capabilities": [],
+  "assets": {
+    "stylesheet": "./theme.css",
+    "wallpaper": "./wallpaper.jpg",
+    "preview": "./preview.png"
+  }
+}
