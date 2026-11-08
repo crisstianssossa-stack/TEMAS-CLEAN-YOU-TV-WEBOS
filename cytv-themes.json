@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "themes": [
+    {
+      "id": "obsidian-ribbon-gold",
+      "name": "Obsidian Ribbon Gold (Estilo Ribbon)",
+      "version": "1.0.0",
+      "style": "Ribbon (2B)",
+      "path": "./themes/obsidian-ribbon-gold/theme.json",
+      "preview": "./themes/obsidian-ribbon-gold/preview.png"
+    },
+    {
+      "id": "amethyst-liquid-glass",
+      "name": "Amethyst Liquid Glass (Estilo Liquid Glass)",
+      "version": "1.0.0",
+      "style": "Liquid Glass (2A)",
+      "path": "./themes/amethyst-liquid-glass/theme.json",
+      "preview": "./themes/amethyst-liquid-glass/preview.png"
+    },
+    {
+      "id": "nocturnal-horizon-classic",
+      "name": "Nocturnal Horizon Classic (Estilo Classic)",
+      "version": "1.0.0",
+      "style": "Classic (2C)",
+      "path": "./themes/nocturnal-horizon-classic/theme.json",
+      "preview": "./themes/nocturnal-horizon-classic/preview.png"
+    },
+    {
+      "id": "aurora-monolith-hybrid",
+      "name": "Aurora Monolith Hybrid (Diseño Nuevo Híbrido)",
+      "version": "1.0.0",
+      "style": "Nuevo Diseño Híbrido (Ribbon + Cristal)",
+      "path": "./themes/aurora-monolith-hybrid/theme.json",
+      "preview": "./themes/aurora-monolith-hybrid/preview.png"
+    }
+  ]
+}
